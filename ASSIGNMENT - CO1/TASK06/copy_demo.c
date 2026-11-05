@@ -58,7 +58,13 @@ long copy_file(const char *src, const char *dst, size_t bufsize)
                 break;
             }
 
-            written += w;
+            if (w == 0) {
+    fprintf(stderr, "write returned 0\n");
+    calls = -1;
+    break;
+}
+
+written += w;
         }
 
         if (calls == -1)
