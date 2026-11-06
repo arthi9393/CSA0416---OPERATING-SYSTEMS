@@ -1,0 +1,24 @@
+q3_threads
+Main thread started.
+Thread 1 is running.
+Thread 1: Count = 1
+Thread 1: Count = 2
+Thread 1: Count = 3
+Thread 1: Count = 4
+Thread 1: Count = 5
+Thread 1 has finished.
+Thread 2 is running.
+Thread 2: Count = 1
+Thread 2: Count = 2
+Thread 2: Count = 3
+Thread 2: Count = 4
+Thread 2: Count = 5
+Thread 2 has finished.
+Thread 3 is running.
+Thread 3: Count = 1
+Thread 3: Count = 2
+Thread 3: Count = 3
+Thread 3: Count = 4
+Thread 3: Count = 5
+Thread 3 has finished.
+All threads have completed.
