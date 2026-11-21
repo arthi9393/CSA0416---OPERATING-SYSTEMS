@@ -1,6 +1,6 @@
 # CSA04 – Operating Systems – Assignment 3 (CO3)
 
-* **Student Name:** [Enter Your Full Name]
+* **Student Name:** ARTHI A 
 * **Register Number:** 192525152
 * **Course:** CSA04 – Operating Systems (CO3: Memory Management, Virtual Memory, Page Replacement & Disk Management)
 * **Compiler & Version:** `gcc 13.2.0`
