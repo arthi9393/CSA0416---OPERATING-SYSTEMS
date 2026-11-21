@@ -1,0 +1,25 @@
+=== Binary Sizes =
+-rwxrwxrwx 1 arthi_a arthi_a  16K Nov 21 07:21 bank_dlopen
+-rwxrwxrwx 1 arthi_a arthi_a  16K Nov 21 07:21 bank_dynamic
+-rwxrwxrwx 1 arthi_a arthi_a 803K Nov 21 07:21 bank_static
+-rwxrwxrwx 1 arthi_a arthi_a  15K Nov 21 07:21 libcrypto_bank.so
+= Shared Libraries (ldd) =
+	linux-vdso.so.1 (0x00007c418c9ab000)
+	libcrypto_bank.so => ./libcrypto_bank.so (0x00007c418c999000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007c418c600000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007c418c9ad000)
+= Execution & /proc/self/maps ===
+Crypto Lib v1 | Encrypted TX: 0xabcdd54c
+Crypto Lib v1 | Encrypted TX: 0xabcdd54c
+--- /proc/self/maps (Top 10 mappings) ---
+599cfe3bb000-599cfe3bc000 r--p 00000000 00:45 8444249301665725           /mnt/c/Users/arthi/Downloads/CSA04-192525152-Assignment3/CSA04-192525152-Assignment3/Q1_Linking_Loading/bank_dynamic
+599cfe3bc000-599cfe3bd000 r-xp 00001000 00:45 8444249301665725           /mnt/c/Users/arthi/Downloads/CSA04-192525152-Assignment3/CSA04-192525152-Assignment3/Q1_Linking_Loading/bank_dynamic
+599cfe3bd000-599cfe3be000 r--p 00002000 00:45 8444249301665725           /mnt/c/Users/arthi/Downloads/CSA04-192525152-Assignment3/CSA04-192525152-Assignment3/Q1_Linking_Loading/bank_dynamic
+599cfe3be000-599cfe3bf000 r--p 00002000 00:45 8444249301665725           /mnt/c/Users/arthi/Downloads/CSA04-192525152-Assignment3/CSA04-192525152-Assignment3/Q1_Linking_Loading/bank_dynamic
+599cfe3bf000-599cfe3c0000 rw-p 00003000 00:45 8444249301665725           /mnt/c/Users/arthi/Downloads/CSA04-192525152-Assignment3/CSA04-192525152-Assignment3/Q1_Linking_Loading/bank_dynamic
+599d313d0000-599d313f1000 rw-p 00000000 00:00 0                          [heap]
+7fcac0600000-7fcac0628000 r--p 00000000 08:30 13614                      /usr/lib/x86_64-linux-gnu/libc.so.6
+7fcac0628000-7fcac07c0000 r-xp 00028000 08:30 13614                      /usr/lib/x86_64-linux-gnu/libc.so.6
+7fcac07c0000-7fcac080e000 r--p 001c0000 08:30 13614                      /usr/lib/x86_64-linux-gnu/libc.so.6
+7fcac080e000-7fcac0812000 r--p 0020e000 08:30 13614                      /usr/lib/x86_64-linux-gnu/libc.so.6
+Runtime dlopen() Encrypted TX: 0xabcdd54c
