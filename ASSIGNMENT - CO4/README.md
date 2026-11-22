@@ -1,10 +1,7 @@
 # CSA04 – Operating Systems – Assignment 4 (CO4)
 
 ## Student details
-- Name: __________________________
-- Register number: _______________
-- GitHub repository: CSA04-<RegisterNumber>-Assignment4
-- OS / Linux distribution and version: __________________________
+- Name: ARTHI A 
 - GCC version: `gcc --version`
 
 ## Contents
