@@ -26,11 +26,4 @@
 2. B2: `bash B2_commands.sh` step by step (copy one command at a time and save outputs).
 3. B3/B4: follow `B3_commands.sh`; `python3 B4_capacity_estimate.py <your_rps>`.
 
-## Results (fill in after running)
-- B1: [short note]
-- B2: image size [..], whoami = portal
-- B3: table in report; 3 pods Running, pod recreated after delete, scaled to 6
-- B4: containers needed for 150,000 students = [..]
 
-## GitHub layout and commits
-Create the repo `CSA04-<RegisterNumber>-Assignment5`, put the files for each task in its own folder (Task01.. or B1, B2, ...) and make at least one commit per task as you finish it - the faculty checks the commit history.
