@@ -1,0 +1,7 @@
+# Edit with: crontab -e     (verify with: crontab -l)
+# Run the log summary at minute 0 of every hour; append output to a log file
+0 * * * * /opt/portal/scripts/B1_log_summary.sh >> /var/log/portal/log_summary.log 2>&1
+# Disk-space alert every 15 minutes (threshold 80 %)
+*/15 * * * * /opt/portal/scripts/B1_disk_alert.sh 80 >> /var/log/portal/disk_alert.log 2>&1
+# Nightly backup of the portal data at 02:30
+30 2 * * * /opt/portal/scripts/B1_backup.sh >> /var/log/portal/backup.log 2>&1

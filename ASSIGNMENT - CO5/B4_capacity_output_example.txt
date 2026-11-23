@@ -1,0 +1,6 @@
+Total requests        : 1,500,000
+Average load          : 208 req/s
+Peak load (x5)     : 1,042 req/s
+Capacity / container  : 400 req/s (usable 280 at 70%)
+Containers needed     : 4
+CPU / memory (limits) : 2 cores / 1 GB

@@ -1,0 +1,23 @@
+# B2: portal + PostgreSQL, database data kept in a named volume, CPU/memory limits on both.
+services:
+  portal:
+    build: .
+    image: result-portal
+    ports: ["8000:8000"]
+    environment:
+      DATABASE_URL: postgresql://portal:portalpw@db:5432/results
+    depends_on: [db]
+    cpus: 0.5
+    mem_limit: 256m
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: portal
+      POSTGRES_PASSWORD: portalpw
+      POSTGRES_DB: results
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    cpus: 1.0
+    mem_limit: 512m
+volumes:
+  dbdata:

@@ -1,0 +1,13 @@
+# B4.1: second service (learning-management system stand-in) next to the portal, each with its own limits.
+# Replace the lms image with your own LMS container if available (the nginx image is a stand-in web service).
+services:
+  portal:
+    image: result-portal
+    ports: ["8000:8000"]
+    cpus: 0.5
+    mem_limit: 256m
+  lms:
+    image: nginx:1.27-alpine
+    ports: ["8081:80"]
+    cpus: 0.25
+    mem_limit: 128m
